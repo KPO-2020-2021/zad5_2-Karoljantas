@@ -1,0 +1,17 @@
+Build by making a build directory (i.\+e. {\ttfamily build/}), run {\ttfamily cmake} in that dir, and then use {\ttfamily make} to build the desired target.
+
+Requirements\+:
+
+Example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{> mkdir build \&\& cd build}
+\DoxyCodeLine{> cmake .. \# options: -\/DCMAKE\_BUILD\_TYPE=[Debug | Coverage | Release], Debug is default}
+\DoxyCodeLine{> make}
+\DoxyCodeLine{> ./main}
+\DoxyCodeLine{> make test      \# Makes and runs the tests.}
+\DoxyCodeLine{> make coverage  \# Generate a coverage report.}
+\DoxyCodeLine{> make doc       \# Generate html documentation.}
+\end{DoxyCode}
+ 

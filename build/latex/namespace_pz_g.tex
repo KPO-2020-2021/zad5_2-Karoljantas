@@ -1,0 +1,372 @@
+\hypertarget{namespace_pz_g}{}\doxysection{PzG Namespace Reference}
+\label{namespace_pz_g}\index{PzG@{PzG}}
+
+
+Moduł narzędzi umożliwiających połącznie z G\+N\+U\+Plotem.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Atrybuty\+Rysowania}}
+\begin{DoxyCompactList}\small\item\em Modeluje zestaw informacji będący atrybutami rysowania. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_pz_g_1_1_info_pliku_do_rysowania}{Info\+Pliku\+Do\+Rysowania}}
+\begin{DoxyCompactList}\small\item\em Zestaw informacji dotyczący pliku i sposobu rysowania. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania}{Info\+Punkty\+Do\+Rysowania}}
+\begin{DoxyCompactList}\small\item\em Modeluje zestaw informacji o rysowanych punktach. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Lacze\+Do\+G\+N\+U\+Plota}}
+\begin{DoxyCompactList}\small\item\em Klasa realizuje interfejs do programu G\+N\+U\+Plot. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_pz_g_1_1_wektor2f}{Wektor2f}}
+\begin{DoxyCompactList}\small\item\em Klasa pomocnicza, pozwala modelować wektor dwuwymiarowy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef list$<$ \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania}{Info\+Punkty\+Do\+Rysowania}} $>$ \mbox{\hyperlink{namespace_pz_g_a663e923efc195ea10f6f7086c6da490b}{Typ\+Lista\+Punktow}}
+\begin{DoxyCompactList}\small\item\em Skrócona nazwa typu listy punktów, które mają być rysowane. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_pz_g_aef59d70a0ee2eab473790613c3628944}{Typ\+Trybu\+Rysowania}} \{ \mbox{\hyperlink{namespace_pz_g_aef59d70a0ee2eab473790613c3628944a5eb0cf8b3405e136f092efdb489d60c4}{T\+R\+\_\+2D}}, 
+\mbox{\hyperlink{namespace_pz_g_aef59d70a0ee2eab473790613c3628944a856e6b0fa6b8a9dc184c60cf27dcc5d2}{T\+R\+\_\+3D}}
+ \}
+\begin{DoxyCompactList}\small\item\em Określa tryb rysowania realizowanego przez program {\ttfamily gnuplot}. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dc}{Typ\+Sposobu\+Rysowania}} \{ \mbox{\hyperlink{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dca22656aba69ada1776d9522ff83f70546}{S\+R\+\_\+\+Ciagly}}, 
+\mbox{\hyperlink{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dca307cba9b5669189418e9d595f0cc83a4}{S\+R\+\_\+\+Punktowy}}, 
+\mbox{\hyperlink{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dca9c1082d7a4a130423bc49dd41e257317}{S\+R\+\_\+\+Punktowy\+Niejednorodny}}
+ \}
+\begin{DoxyCompactList}\small\item\em Sposób rysowania linii lub punktów. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4}{Typ\+Dostepu\+Do\+Zasobu}} \{ \mbox{\hyperlink{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826}{D\+Z\+\_\+\+Lokalny}}, 
+\mbox{\hyperlink{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4a21d511d2fe6c4e27e30ebe255405e6d9}{D\+Z\+\_\+\+Globalny}}
+ \}
+\begin{DoxyCompactList}\small\item\em Typ dostępu do plik z danymi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespace_pz_g_ae1aad0c681853d7e47da4cdfccefc102}{Czy\+Jest\+Plik}} (char const $\ast$s\+Nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Funkcja pomocnicza, sprawdza czy plik o podanej nazwie jest na dysku. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_pz_g_aa010184f31b26bb561b42f22438b821e}{Dopisz\+Rysowanie\+Z\+Plikow}} (list$<$ \mbox{\hyperlink{class_pz_g_1_1_info_pliku_do_rysowania}{Info\+Pliku\+Do\+Rysowania}} $>$\+::const\+\_\+iterator \&Iter\+Nazw, const list$<$ \mbox{\hyperlink{class_pz_g_1_1_info_pliku_do_rysowania}{Info\+Pliku\+Do\+Rysowania}} $>$\+::const\+\_\+iterator \&Iter\+Konca, std\+::string \&Polecenie, char const $\ast$$\ast$ww\+Sep)
+\begin{DoxyCompactList}\small\item\em Funkcja pomocnicza, dopisuje do polecenia wpisy związane z rysowaniem z pliku. \end{DoxyCompactList}\item 
+istream \& \mbox{\hyperlink{namespace_pz_g_a7d2a85ab24d848d5c8b7bca57688df93}{operator$>$$>$}} (istream \&Strm\+We, \mbox{\hyperlink{class_pz_g_1_1_wektor2f}{Wektor2f}} \&Wspolrz)
+\begin{DoxyCompactList}\small\item\em Wczytuje wartości współrzędnych. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_pz_g_a169c311f0e0b6ffadcd44e91e749f72d}{Wczytaj\+Liste\+Roznych\+Punktow}} (const char $\ast$Nazwa\+Pliku, \mbox{\hyperlink{namespace_pz_g_a663e923efc195ea10f6f7086c6da490b}{Typ\+Lista\+Punktow}} \&Lista\+Pkt, int Kolor, int Styl, const char $\ast$s\+Etykieta)
+\begin{DoxyCompactList}\small\item\em Wczytuje z pliku listę punktów. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_pz_g_ae6b9705e199ad695b61b4e902eaf0d6c}{Dopisz\+Ustawienia\+Etykiet}} (const \mbox{\hyperlink{namespace_pz_g_a663e923efc195ea10f6f7086c6da490b}{Typ\+Lista\+Punktow}} \&Lista\+Pkt, std\+::string \&Comm)
+\begin{DoxyCompactList}\small\item\em Dopisuje do tworzonego polenia dla gnuplota wpisy ustawiające etykiety punktów. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_pz_g_a85d3a77f67c2724ba3675bc3ef05eb81}{Dopisz\+Rysowanie\+Punktow\+Z\+Listy}} (\mbox{\hyperlink{namespace_pz_g_a663e923efc195ea10f6f7086c6da490b}{Typ\+Lista\+Punktow}} \&Lista\+Pkt, std\+::string \&Comm, const char $\ast$Sep)
+\begin{DoxyCompactList}\small\item\em Dopisuje do polecenia rysowania wpisy z nazwami plików, w których są współrzędne punktów. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_pz_g_a7227cb39c785b1c746b6bb5515c0b781}{Dopisz\+Rysowanie\+Z\+Roznych\+Punktow}} (list$<$ \mbox{\hyperlink{class_pz_g_1_1_info_pliku_do_rysowania}{Info\+Pliku\+Do\+Rysowania}} $>$\+::const\+\_\+iterator \&Iter\+Nazw, list$<$ \mbox{\hyperlink{class_pz_g_1_1_info_pliku_do_rysowania}{Info\+Pliku\+Do\+Rysowania}} $>$\+::const\+\_\+iterator \&Iter\+Konca, list$<$ \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania}{Info\+Punkty\+Do\+Rysowania}} $>$ \&Lista\+Punktow)
+\begin{DoxyCompactList}\small\item\em Dodaje do listy rysowanych punktów, punkty o różnych rozmiarach. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_pz_g_a3927f83244df8a7245e105150a9fb3b2}{Usun\+Ostatnia\+Nazwe\+Pliku}} (list$<$ \mbox{\hyperlink{class_pz_g_1_1_info_pliku_do_rysowania}{Info\+Pliku\+Do\+Rysowania}} $>$ \&Lista)
+\begin{DoxyCompactList}\small\item\em Usuwa ostatnia nazwę pliku z listy plików do rysowania. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Moduł narzędzi umożliwiających połącznie z G\+N\+U\+Plotem. 
+
+Niniejsza przestrzeń nazw stanowi moduł logiczny zawierający narzędzia umożliwiające realizację połączenia z programem {\ttfamily gnuplot}. 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespace_pz_g_a663e923efc195ea10f6f7086c6da490b}\label{namespace_pz_g_a663e923efc195ea10f6f7086c6da490b}} 
+\index{PzG@{PzG}!TypListaPunktow@{TypListaPunktow}}
+\index{TypListaPunktow@{TypListaPunktow}!PzG@{PzG}}
+\doxysubsubsection{\texorpdfstring{TypListaPunktow}{TypListaPunktow}}
+{\footnotesize\ttfamily typedef list$<$\mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania}{Info\+Punkty\+Do\+Rysowania}}$>$ \mbox{\hyperlink{namespace_pz_g_a663e923efc195ea10f6f7086c6da490b}{Pz\+G\+::\+Typ\+Lista\+Punktow}}}
+
+
+
+Skrócona nazwa typu listy punktów, które mają być rysowane. 
+
+Jest to skrócona nazwa typu listy punktów, które mają być rysowane. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4}\label{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4}} 
+\index{PzG@{PzG}!TypDostepuDoZasobu@{TypDostepuDoZasobu}}
+\index{TypDostepuDoZasobu@{TypDostepuDoZasobu}!PzG@{PzG}}
+\doxysubsubsection{\texorpdfstring{TypDostepuDoZasobu}{TypDostepuDoZasobu}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4}{Pz\+G\+::\+Typ\+Dostepu\+Do\+Zasobu}}}
+
+
+
+Typ dostępu do plik z danymi. 
+
+Typ dostepu do plik z danymi, tzn. czy jest on lokalny tylko z poziomu pojedynczego łącza czy też z pozmiomu wszystkich łącz \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DZ\_Lokalny@{DZ\_Lokalny}!PzG@{PzG}}\index{PzG@{PzG}!DZ\_Lokalny@{DZ\_Lokalny}}}\mbox{\Hypertarget{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826}\label{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4ab239a07233614b519b0f2f5ca8af7826}} 
+D\+Z\+\_\+\+Lokalny&
+\begin{DoxyItemize}
+\item dostęp tylko z poziomu pojedynczego łącza. Dane z pliku będą wizualizowane tylko w jednym okienku graficznym odpowiadające danym łączu. 
+\end{DoxyItemize}\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DZ\_Globalny@{DZ\_Globalny}!PzG@{PzG}}\index{PzG@{PzG}!DZ\_Globalny@{DZ\_Globalny}}}\mbox{\Hypertarget{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4a21d511d2fe6c4e27e30ebe255405e6d9}\label{namespace_pz_g_af74528dea7061dcb07cf44f315703cf4a21d511d2fe6c4e27e30ebe255405e6d9}} 
+D\+Z\+\_\+\+Globalny&
+\begin{DoxyItemize}
+\item dostęp ze poziomu wszystkich łączy. Dane z pliku będą wizualizowane we okienkach graficznych odpowiadającym utworzonym łączom. 
+\end{DoxyItemize}\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dc}\label{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dc}} 
+\index{PzG@{PzG}!TypSposobuRysowania@{TypSposobuRysowania}}
+\index{TypSposobuRysowania@{TypSposobuRysowania}!PzG@{PzG}}
+\doxysubsubsection{\texorpdfstring{TypSposobuRysowania}{TypSposobuRysowania}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dc}{Pz\+G\+::\+Typ\+Sposobu\+Rysowania}}}
+
+
+
+Sposób rysowania linii lub punktów. 
+
+Sposób rysowania linii lub punktów. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SR\_Ciagly@{SR\_Ciagly}!PzG@{PzG}}\index{PzG@{PzG}!SR\_Ciagly@{SR\_Ciagly}}}\mbox{\Hypertarget{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dca22656aba69ada1776d9522ff83f70546}\label{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dca22656aba69ada1776d9522ff83f70546}} 
+S\+R\+\_\+\+Ciagly&\begin{DoxyVerb}     - rysowana jest linia łaman łącząca kolejne punkty.
+     Współrzędne punktów \e x i \e y zadawane są w pliku tekstowym.
+     Zapiswane one muszą być w osobnych liniach.
+\end{DoxyVerb}
+ \begin{DoxyVerb}       20    30
+       41.5  62
+\end{DoxyVerb}
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SR\_Punktowy@{SR\_Punktowy}!PzG@{PzG}}\index{PzG@{PzG}!SR\_Punktowy@{SR\_Punktowy}}}\mbox{\Hypertarget{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dca307cba9b5669189418e9d595f0cc83a4}\label{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dca307cba9b5669189418e9d595f0cc83a4}} 
+S\+R\+\_\+\+Punktowy&\begin{DoxyVerb}     - rysowane są jednakowe punkty.
+     Współrzędne punktów \e x i \e y zadawane są w pliku tekstowym.
+     Zapiswane one muszą być w osobnych liniach, np.
+     \verbatim
+   20    30
+   41.5  62
+\end{DoxyVerb}
+  \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SR\_PunktowyNiejednorodny@{SR\_PunktowyNiejednorodny}!PzG@{PzG}}\index{PzG@{PzG}!SR\_PunktowyNiejednorodny@{SR\_PunktowyNiejednorodny}}}\mbox{\Hypertarget{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dca9c1082d7a4a130423bc49dd41e257317}\label{namespace_pz_g_a53d89f50686ddd39301f9706cc1247dca9c1082d7a4a130423bc49dd41e257317}} 
+S\+R\+\_\+\+Punktowy\+Niejednorodny&\begin{DoxyVerb}     - rysowane są punkty o różnych rozmiarach.
+     Współrzędne punktów \e x i \e y oraz ich rozmiary 
+     zadawane są w pliku tekstowym.
+     Wartość rozmiaru musi być liczbą całkowitą większą od 0.
+     Współrzędne i rozmiar muszą być w osobnych liniach, np.
+     \verbatim
+   20    30   5
+   41.5  62   2
+\end{DoxyVerb}
+  \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_pz_g_aef59d70a0ee2eab473790613c3628944}\label{namespace_pz_g_aef59d70a0ee2eab473790613c3628944}} 
+\index{PzG@{PzG}!TypTrybuRysowania@{TypTrybuRysowania}}
+\index{TypTrybuRysowania@{TypTrybuRysowania}!PzG@{PzG}}
+\doxysubsubsection{\texorpdfstring{TypTrybuRysowania}{TypTrybuRysowania}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_pz_g_aef59d70a0ee2eab473790613c3628944}{Pz\+G\+::\+Typ\+Trybu\+Rysowania}}}
+
+
+
+Określa tryb rysowania realizowanego przez program {\ttfamily gnuplot}. 
+
+Typ wyliczeniowy określające dopuszczalne tryby rysowania realizowanego przez program {\ttfamily gnuplot}. Wybór trybu wiąże się ze zmianą sposobu interpretacji danych zawartych pliku. Jeśli np. wybrany zostanie tryb 2D, to zakłada się, że w każdej linii pliku z danymi znajdują się wartości współrzędnych {\itshape x}, {\itshape y}. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TR\_2D@{TR\_2D}!PzG@{PzG}}\index{PzG@{PzG}!TR\_2D@{TR\_2D}}}\mbox{\Hypertarget{namespace_pz_g_aef59d70a0ee2eab473790613c3628944a5eb0cf8b3405e136f092efdb489d60c4}\label{namespace_pz_g_aef59d70a0ee2eab473790613c3628944a5eb0cf8b3405e136f092efdb489d60c4}} 
+T\+R\+\_\+2D&
+\begin{DoxyItemize}
+\item rysowanie w trybie 2D, co sprowadza się do rysowania wykresów funkcji jednej zmiennej. 
+\end{DoxyItemize}\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TR\_3D@{TR\_3D}!PzG@{PzG}}\index{PzG@{PzG}!TR\_3D@{TR\_3D}}}\mbox{\Hypertarget{namespace_pz_g_aef59d70a0ee2eab473790613c3628944a856e6b0fa6b8a9dc184c60cf27dcc5d2}\label{namespace_pz_g_aef59d70a0ee2eab473790613c3628944a856e6b0fa6b8a9dc184c60cf27dcc5d2}} 
+T\+R\+\_\+3D&
+\begin{DoxyItemize}
+\item rysowanie w trybie 3D. Oznacza to możliwość rysowania wykresów funkcji dwóch zmiennych. 
+\end{DoxyItemize}\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_pz_g_ae1aad0c681853d7e47da4cdfccefc102}\label{namespace_pz_g_ae1aad0c681853d7e47da4cdfccefc102}} 
+\index{PzG@{PzG}!CzyJestPlik@{CzyJestPlik}}
+\index{CzyJestPlik@{CzyJestPlik}!PzG@{PzG}}
+\doxysubsubsection{\texorpdfstring{CzyJestPlik()}{CzyJestPlik()}}
+{\footnotesize\ttfamily bool Pz\+G\+::\+Czy\+Jest\+Plik (\begin{DoxyParamCaption}\item[{char const $\ast$}]{s\+Nazwa\+Pliku }\end{DoxyParamCaption})}
+
+
+
+Funkcja pomocnicza, sprawdza czy plik o podanej nazwie jest na dysku. 
+
+Funkcja pomocnicza, sprawdza czy plik o podanej nazwie jest na dysku i może być otwarty od odczytu. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s\+Nazwa\+Pliku} & -\/ nazwa pliku, którego istnienie ma być sprawdzone. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & -\/ plik istnieje na dysku i może być otwarty do odczytu. \\
+\hline
+{\em false} & -\/ w przypadku przeciwnym. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{namespace_pz_g_a85d3a77f67c2724ba3675bc3ef05eb81}\label{namespace_pz_g_a85d3a77f67c2724ba3675bc3ef05eb81}} 
+\index{PzG@{PzG}!DopiszRysowaniePunktowZListy@{DopiszRysowaniePunktowZListy}}
+\index{DopiszRysowaniePunktowZListy@{DopiszRysowaniePunktowZListy}!PzG@{PzG}}
+\doxysubsubsection{\texorpdfstring{DopiszRysowaniePunktowZListy()}{DopiszRysowaniePunktowZListy()}}
+{\footnotesize\ttfamily bool Pz\+G\+::\+Dopisz\+Rysowanie\+Punktow\+Z\+Listy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_pz_g_a663e923efc195ea10f6f7086c6da490b}{Typ\+Lista\+Punktow}} \&}]{Lista\+Pkt,  }\item[{std\+::string \&}]{Comm,  }\item[{const char $\ast$}]{Sep }\end{DoxyParamCaption})}
+
+
+
+Dopisuje do polecenia rysowania wpisy z nazwami plików, w których są współrzędne punktów. 
+
+Dopisuje do polecenia rysowania dla {\ttfamily gnuplota} wpisy z nazwami plików, w których są współrzędne punktów. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Lista\+Pkt} & -\/ lista punktów, które mają zostać narysowane, \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em Comm} & -\/ tworzone polecenie dla {\ttfamily gnuplota}, w którym mają pojawić się wpisy z nazwami plików z danymi punktów do rysowania. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Sep} & -\/ wskaźnik na separator, jaki ma zostać użyty w liście wpisów tworzonego polecenia dla gnuplota. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & -\/ lista punktów nie jest pusta i wpisy zostały dodane. \\
+\hline
+{\em false} & -\/ lista punktów jest pusta, tym samym wpisy nie zostały dodane. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{namespace_pz_g_aa010184f31b26bb561b42f22438b821e}\label{namespace_pz_g_aa010184f31b26bb561b42f22438b821e}} 
+\index{PzG@{PzG}!DopiszRysowanieZPlikow@{DopiszRysowanieZPlikow}}
+\index{DopiszRysowanieZPlikow@{DopiszRysowanieZPlikow}!PzG@{PzG}}
+\doxysubsubsection{\texorpdfstring{DopiszRysowanieZPlikow()}{DopiszRysowanieZPlikow()}}
+{\footnotesize\ttfamily bool Pz\+G\+::\+Dopisz\+Rysowanie\+Z\+Plikow (\begin{DoxyParamCaption}\item[{list$<$ \mbox{\hyperlink{class_pz_g_1_1_info_pliku_do_rysowania}{Info\+Pliku\+Do\+Rysowania}} $>$\+::const\+\_\+iterator \&}]{Iter\+Nazw,  }\item[{const list$<$ \mbox{\hyperlink{class_pz_g_1_1_info_pliku_do_rysowania}{Info\+Pliku\+Do\+Rysowania}} $>$\+::const\+\_\+iterator \&}]{Iter\+Konca,  }\item[{std\+::string \&}]{Polecenie,  }\item[{char const $\ast$$\ast$}]{ww\+Sep }\end{DoxyParamCaption})}
+
+
+
+Funkcja pomocnicza, dopisuje do polecenia wpisy związane z rysowaniem z pliku. 
+
+Funkcja pomocnicza, dopisuje do polecenia wpisy związane z rysowaniem z pliku. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em Iter\+Nazw} & -\/ iterator listy nazw plików, od miejsca wkazywanego przez iterator rozpoczyna się dopisywanie wpisów rysowania z wykorzystaniem danych zawartych w plikach. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Iter\+Konca} & -\/ itrator końca, który wyznacza miejsce zakończenia dopisywania wpisów rysowania z plików. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em Polecenie} & -\/ zawartość polecenia dla gnuplota, do którego dopisywane są wpisy rysowania z poszczególnych plików. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em ww\+Sep} & -\/ pośredni wskaźnik na separator wpisów. Po dodaniu pierwszego wpisu separator jest zmieniany na ciąg \char`\"{}, \char`\"{}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & -\/ operacja powiodła się, \\
+\hline
+{\em false} & -\/ w przypadku przeciwnym. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{namespace_pz_g_a7227cb39c785b1c746b6bb5515c0b781}\label{namespace_pz_g_a7227cb39c785b1c746b6bb5515c0b781}} 
+\index{PzG@{PzG}!DopiszRysowanieZRoznychPunktow@{DopiszRysowanieZRoznychPunktow}}
+\index{DopiszRysowanieZRoznychPunktow@{DopiszRysowanieZRoznychPunktow}!PzG@{PzG}}
+\doxysubsubsection{\texorpdfstring{DopiszRysowanieZRoznychPunktow()}{DopiszRysowanieZRoznychPunktow()}}
+{\footnotesize\ttfamily void Pz\+G\+::\+Dopisz\+Rysowanie\+Z\+Roznych\+Punktow (\begin{DoxyParamCaption}\item[{list$<$ \mbox{\hyperlink{class_pz_g_1_1_info_pliku_do_rysowania}{Info\+Pliku\+Do\+Rysowania}} $>$\+::const\+\_\+iterator \&}]{Iter\+Nazw,  }\item[{list$<$ \mbox{\hyperlink{class_pz_g_1_1_info_pliku_do_rysowania}{Info\+Pliku\+Do\+Rysowania}} $>$\+::const\+\_\+iterator \&}]{Iter\+Konca,  }\item[{list$<$ \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania}{Info\+Punkty\+Do\+Rysowania}} $>$ \&}]{Lista\+Punktow }\end{DoxyParamCaption})}
+
+
+
+Dodaje do listy rysowanych punktów, punkty o różnych rozmiarach. 
+
+Dopisuje do listy punktów, które mają być rysowane, punkty traktowane jako niejednorodne, a więc mogące mieć różne rozmiary. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Iter\+Nazw} & -\/ iterator nazw plików z punktami niejednorodnymi, wyznacza pierwszy element, który ma być dodany do listy rysowanych punktów. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Iter\+Konca} & -\/ iterator końca listy dopisywanych punktów. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em Lista\+Punktow} & -\/ lista punktów do rysowania, do której ma być dopisany zbiór nazw plików zawierających punkty niejednorodne. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_pz_g_ae6b9705e199ad695b61b4e902eaf0d6c}\label{namespace_pz_g_ae6b9705e199ad695b61b4e902eaf0d6c}} 
+\index{PzG@{PzG}!DopiszUstawieniaEtykiet@{DopiszUstawieniaEtykiet}}
+\index{DopiszUstawieniaEtykiet@{DopiszUstawieniaEtykiet}!PzG@{PzG}}
+\doxysubsubsection{\texorpdfstring{DopiszUstawieniaEtykiet()}{DopiszUstawieniaEtykiet()}}
+{\footnotesize\ttfamily bool Pz\+G\+::\+Dopisz\+Ustawienia\+Etykiet (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespace_pz_g_a663e923efc195ea10f6f7086c6da490b}{Typ\+Lista\+Punktow}} \&}]{Lista\+Pkt,  }\item[{std\+::string \&}]{Comm }\end{DoxyParamCaption})}
+
+
+
+Dopisuje do tworzonego polenia dla gnuplota wpisy ustawiające etykiety punktów. 
+
+Dopisuje do tworzonego polenia dla gnuplota wpisy ustawiające etykiety punktów. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Lista\+Pkt} & -\/ lista punktów, dla których mają zostać dopisane etykiety. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em Comm} & -\/ polecenie, do którego dopisywane są wpisy rysowania odpowiednich etykiet. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & -\/ wpisy ryowania etykie zostały dopisane. \\
+\hline
+{\em false} & -\/ lista punktów jest pusta i wpisy nie zostały dopisane. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{namespace_pz_g_a7d2a85ab24d848d5c8b7bca57688df93}\label{namespace_pz_g_a7d2a85ab24d848d5c8b7bca57688df93}} 
+\index{PzG@{PzG}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!PzG@{PzG}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily istream\& Pz\+G\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{Strm\+We,  }\item[{\mbox{\hyperlink{class_pz_g_1_1_wektor2f}{Wektor2f}} \&}]{Wspolrz }\end{DoxyParamCaption})}
+
+
+
+Wczytuje wartości współrzędnych. 
+
+Wczytuje wartości współrzędnych. Najpierw jest czytana współrzędna {\itshape x}, a później {\itshape y}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em Strm\+We} & -\/ strumień wejściowy, na którym ma być wykonana dana operacja. \\
+\hline
+\mbox{\texttt{ out}}  & {\em Wspolrz} & -\/ zawiera wczytane wartości współrzędnych, o ile operacja czytania powiodła się. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Strumień {\itshape Strm\+We}, który jest parametrem wejściowym. Jego stan jest zmieniony ze względu na wykonaną operację czytania. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_pz_g_a3927f83244df8a7245e105150a9fb3b2}\label{namespace_pz_g_a3927f83244df8a7245e105150a9fb3b2}} 
+\index{PzG@{PzG}!UsunOstatniaNazwePliku@{UsunOstatniaNazwePliku}}
+\index{UsunOstatniaNazwePliku@{UsunOstatniaNazwePliku}!PzG@{PzG}}
+\doxysubsubsection{\texorpdfstring{UsunOstatniaNazwePliku()}{UsunOstatniaNazwePliku()}}
+{\footnotesize\ttfamily void Pz\+G\+::\+Usun\+Ostatnia\+Nazwe\+Pliku (\begin{DoxyParamCaption}\item[{list$<$ \mbox{\hyperlink{class_pz_g_1_1_info_pliku_do_rysowania}{Info\+Pliku\+Do\+Rysowania}} $>$ \&}]{Lista }\end{DoxyParamCaption})}
+
+
+
+Usuwa ostatnia nazwę pliku z listy plików do rysowania. 
+
+Funkcja ma charakter pomocniczy. Usuwa ostatnią nazwę z listy nazw plików z danymi przeznaczonych do rysowania. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Lista} & -\/ lista plików, z której ma zostać usunięty ostatni element. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_pz_g_a169c311f0e0b6ffadcd44e91e749f72d}\label{namespace_pz_g_a169c311f0e0b6ffadcd44e91e749f72d}} 
+\index{PzG@{PzG}!WczytajListeRoznychPunktow@{WczytajListeRoznychPunktow}}
+\index{WczytajListeRoznychPunktow@{WczytajListeRoznychPunktow}!PzG@{PzG}}
+\doxysubsubsection{\texorpdfstring{WczytajListeRoznychPunktow()}{WczytajListeRoznychPunktow()}}
+{\footnotesize\ttfamily bool Pz\+G\+::\+Wczytaj\+Liste\+Roznych\+Punktow (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Nazwa\+Pliku,  }\item[{\mbox{\hyperlink{namespace_pz_g_a663e923efc195ea10f6f7086c6da490b}{Typ\+Lista\+Punktow}} \&}]{Lista\+Pkt,  }\item[{int}]{Kolor,  }\item[{int}]{Styl,  }\item[{const char $\ast$}]{s\+Etykieta }\end{DoxyParamCaption})}
+
+
+
+Wczytuje z pliku listę punktów. 
+
+Wczytuje z pliku listę punktów, które mogą się różnić rozmiarem. Dane w pliku zapisywane są w postaci tekstowej wg następującego schematu\+: \begin{DoxyVerb}    x_1  y_1  rozmiar_1
+    x_2  y_2  rozmiar_2
+     ...
+    x_n  y_n  rozmiar_n
+\end{DoxyVerb}
+ gdzie {\itshape x\+\_\+i}, {\itshape y\+\_\+i}, {\itshape rozmiar\+\_\+i} to współrzędna {\itshape x-\/owa}, {\itshape y-\/owa} oraz rozmiar {\itshape i-\/tego} punktu. Dopuszczalne jest również wstawianie komentarzy jedno liniowych. Musi się on jednak rozpoczynać od początku linii znakiem {\ttfamily \#}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Nazwa\+Pliku} & -\/ nazwa pliku, z którego mają być wczytane informacje dotyczące punktów. \\
+\hline
+\mbox{\texttt{ in,out}}  & {\em Lista\+Pkt} & -\/ lista punktów, do której składowane są wczytane dane o punktach. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Kolor} & -\/ numer koloru jakim ma być rysowny dany element graficzny. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Styl} & -\/ styl rysowania, np. rysowanie punktu jako kropki lub krzyżyka. \\
+\hline
+\mbox{\texttt{ in}}  & {\em s\+Etykieta} & -\/ etykietę, która może być wyświetlona razem z danym punktem.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & -\/ gdy operacja powiodła się, \\
+\hline
+{\em false} & -\/ w przypadku przeciwnym. \\
+\hline
+\end{DoxyRetVals}

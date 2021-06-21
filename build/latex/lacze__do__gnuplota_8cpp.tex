@@ -1,0 +1,77 @@
+\hypertarget{lacze__do__gnuplota_8cpp}{}\doxysection{/home/karol/repozytoria/zad5\+\_\+2-\/\+Karoljantas/src/lacze\+\_\+do\+\_\+gnuplota.cpp File Reference}
+\label{lacze__do__gnuplota_8cpp}\index{/home/karol/repozytoria/zad5\_2-\/Karoljantas/src/lacze\_do\_gnuplota.cpp@{/home/karol/repozytoria/zad5\_2-\/Karoljantas/src/lacze\_do\_gnuplota.cpp}}
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include \char`\"{}lacze\+\_\+do\+\_\+gnuplota.\+hh\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_pz_g_1_1_atrybuty_rysowania}{Pz\+G\+::\+Atrybuty\+Rysowania}}
+\begin{DoxyCompactList}\small\item\em Modeluje zestaw informacji będący atrybutami rysowania. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_pz_g_1_1_wektor2f}{Pz\+G\+::\+Wektor2f}}
+\begin{DoxyCompactList}\small\item\em Klasa pomocnicza, pozwala modelować wektor dwuwymiarowy. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_pz_g_1_1_info_punkty_do_rysowania}{Pz\+G\+::\+Info\+Punkty\+Do\+Rysowania}}
+\begin{DoxyCompactList}\small\item\em Modeluje zestaw informacji o rysowanych punktach. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_pz_g}{PzG}}
+\begin{DoxyCompactList}\small\item\em Moduł narzędzi umożliwiających połącznie z G\+N\+U\+Plotem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_a08dcd9b8e0e589e86d85ee27a70a602e}\label{lacze__do__gnuplota_8cpp_a08dcd9b8e0e589e86d85ee27a70a602e}} 
+\#define {\bfseries D\+O\+M\+Y\+S\+L\+N\+A\+\_\+\+S\+Z\+E\+R\+O\+K\+O\+SC}~1
+\item 
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_a519eedd673781586ee31ff603b8ba104}\label{lacze__do__gnuplota_8cpp_a519eedd673781586ee31ff603b8ba104}} 
+\#define {\bfseries D\+O\+M\+Y\+S\+L\+N\+Y\+\_\+\+K\+O\+L\+OR}~1
+\item 
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_a26c7b575f64017fa2e44dcfde0a8ab93}\label{lacze__do__gnuplota_8cpp_a26c7b575f64017fa2e44dcfde0a8ab93}} 
+\#define {\bfseries D\+O\+M\+Y\+S\+L\+N\+Y\+\_\+\+S\+T\+YL}~7
+\item 
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_ac00bfb46347d26fdc58568fe1ab5fa5b}\label{lacze__do__gnuplota_8cpp_ac00bfb46347d26fdc58568fe1ab5fa5b}} 
+\#define {\bfseries S\+T\+D\+IN}~0
+\item 
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_a8875037d0772a4fc34516f1e03d7e238}\label{lacze__do__gnuplota_8cpp_a8875037d0772a4fc34516f1e03d7e238}} 
+\#define {\bfseries S\+T\+D\+O\+UT}~1
+\item 
+\mbox{\Hypertarget{lacze__do__gnuplota_8cpp_a2b501945c8d86114fcf6420cc1ee6306}\label{lacze__do__gnuplota_8cpp_a2b501945c8d86114fcf6420cc1ee6306}} 
+\#define {\bfseries R\+O\+Z\+\_\+\+L\+I\+N\+II}~120
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef list$<$ Info\+Punkty\+Do\+Rysowania $>$ \mbox{\hyperlink{namespace_pz_g_a663e923efc195ea10f6f7086c6da490b}{Pz\+G\+::\+Typ\+Lista\+Punktow}}
+\begin{DoxyCompactList}\small\item\em Skrócona nazwa typu listy punktów, które mają być rysowane. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespace_pz_g_ae1aad0c681853d7e47da4cdfccefc102}{Pz\+G\+::\+Czy\+Jest\+Plik}} (char const $\ast$s\+Nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Funkcja pomocnicza, sprawdza czy plik o podanej nazwie jest na dysku. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_pz_g_aa010184f31b26bb561b42f22438b821e}{Pz\+G\+::\+Dopisz\+Rysowanie\+Z\+Plikow}} (list$<$ Info\+Pliku\+Do\+Rysowania $>$\+::const\+\_\+iterator \&Iter\+Nazw, const list$<$ Info\+Pliku\+Do\+Rysowania $>$\+::const\+\_\+iterator \&Iter\+Konca, std\+::string \&Polecenie, char const $\ast$$\ast$ww\+Sep)
+\begin{DoxyCompactList}\small\item\em Funkcja pomocnicza, dopisuje do polecenia wpisy związane z rysowaniem z pliku. \end{DoxyCompactList}\item 
+istream \& \mbox{\hyperlink{namespace_pz_g_a7d2a85ab24d848d5c8b7bca57688df93}{Pz\+G\+::operator$>$$>$}} (istream \&Strm\+We, Wektor2f \&Wspolrz)
+\begin{DoxyCompactList}\small\item\em Wczytuje wartości współrzędnych. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_pz_g_a169c311f0e0b6ffadcd44e91e749f72d}{Pz\+G\+::\+Wczytaj\+Liste\+Roznych\+Punktow}} (const char $\ast$Nazwa\+Pliku, Typ\+Lista\+Punktow \&Lista\+Pkt, int Kolor, int Styl, const char $\ast$s\+Etykieta)
+\begin{DoxyCompactList}\small\item\em Wczytuje z pliku listę punktów. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_pz_g_ae6b9705e199ad695b61b4e902eaf0d6c}{Pz\+G\+::\+Dopisz\+Ustawienia\+Etykiet}} (const Typ\+Lista\+Punktow \&Lista\+Pkt, std\+::string \&Comm)
+\begin{DoxyCompactList}\small\item\em Dopisuje do tworzonego polenia dla gnuplota wpisy ustawiające etykiety punktów. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_pz_g_a85d3a77f67c2724ba3675bc3ef05eb81}{Pz\+G\+::\+Dopisz\+Rysowanie\+Punktow\+Z\+Listy}} (Typ\+Lista\+Punktow \&Lista\+Pkt, std\+::string \&Comm, const char $\ast$Sep)
+\begin{DoxyCompactList}\small\item\em Dopisuje do polecenia rysowania wpisy z nazwami plików, w których są współrzędne punktów. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_pz_g_a7227cb39c785b1c746b6bb5515c0b781}{Pz\+G\+::\+Dopisz\+Rysowanie\+Z\+Roznych\+Punktow}} (list$<$ Info\+Pliku\+Do\+Rysowania $>$\+::const\+\_\+iterator \&Iter\+Nazw, list$<$ Info\+Pliku\+Do\+Rysowania $>$\+::const\+\_\+iterator \&Iter\+Konca, list$<$ Info\+Punkty\+Do\+Rysowania $>$ \&Lista\+Punktow)
+\begin{DoxyCompactList}\small\item\em Dodaje do listy rysowanych punktów, punkty o różnych rozmiarach. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_pz_g_a3927f83244df8a7245e105150a9fb3b2}{Pz\+G\+::\+Usun\+Ostatnia\+Nazwe\+Pliku}} (list$<$ Info\+Pliku\+Do\+Rysowania $>$ \&Lista)
+\begin{DoxyCompactList}\small\item\em Usuwa ostatnia nazwę pliku z listy plików do rysowania. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ostatnia modyfikacja\+: 2020.\+06.\+07 

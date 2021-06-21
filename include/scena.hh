@@ -17,6 +17,7 @@ class Scena {
   std::list<shared_ptr<bryla>> lista_przeszkod;
   PzG::LaczeDoGNUPlota Lacze;
   Powierzchnia *dno;
+  int nr_ob;
   Dron *nowy[2];
 
 public:
@@ -26,7 +27,7 @@ public:
         double argumentsV4[] = {100.0, 105.0, 0};
     nowy[0] = new Dron(0, argumentsV2);
     nowy[1] = new Dron(1, argumentsV3);
-    
+    nr_ob=3;
     lista_przeszkod.push_front(make_shared<Gran>(argumentsV4,100,150,150,"../datasets/obiekt0.dat"));
       Lacze.DodajNazwePliku("../datasets/obiekt0.dat");
          argumentsV4[0]=rand()%400-200;
@@ -72,15 +73,18 @@ public:
    * Funkcja opisująca opcje. | Argumenty: |
    *                                                |
    *     \param [in]        kat - kat                        |
-   *            \param [in] nr   - nr drona | \param [in] x  -droga | .        |
+   *            \param [in] nr   - nr drona |
+   * \param [in] x  -droga |         
+    *            \param [in] opc   - opcja |   
    */
 
   void opcja() {
+            double argumentsV4[] = {100.0, 105.0, 0};
     int opc;
     double x, a;
     double kat = 0;
     int nr;
-    std::cout << "1 normlany lot 2 okregi  " << std::endl;
+    std::cout << "1 normlany lot 2 okregi 3 dodaj przeszkode " << std::endl;
     std::cin >> opc;
     switch (opc) {
     case 1: {
@@ -192,11 +196,31 @@ public:
       }
       Lacze.UsunNazwePliku("../datasets/droga.dat");
     }
-    /*!
-     * Funkcja opisujaca zapis | Argumenty: |
-     *                                                |
-     */
+   
 
+    break;
+    case 3:
+
+{
+       argumentsV4[0]=rand()%400-200;
+         argumentsV4[1]=rand()%400-200;
+       int ob=rand()%3;
+
+if(ob==0)
+{
+    lista_przeszkod.push_front(make_shared<Gora>(argumentsV4,100,150,250,"../datasets/obiekt" + std::to_string(nr_ob) + ".dat"));
+      Lacze.DodajNazwePliku(("../datasets/obiekt" + std::to_string(nr_ob) + ".dat").c_str());
+}if(ob==1)
+{
+    lista_przeszkod.push_front(make_shared<Plaskowyz>(argumentsV4,100,150,250,"../datasets/obiekt" + std::to_string(nr_ob) + ".dat"));
+      Lacze.DodajNazwePliku(("../datasets/obiekt" + std::to_string(nr_ob) + ".dat").c_str());
+}if(ob==2)
+{
+    lista_przeszkod.push_front(make_shared<Gran>(argumentsV4,100,150,250,"../datasets/obiekt" + std::to_string(nr_ob) + ".dat"));
+      Lacze.DodajNazwePliku(("../datasets/obiekt" + std::to_string(nr_ob) + ".dat").c_str());
+}
+nr_ob++;
+}
     break;
     default:
       break;

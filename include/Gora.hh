@@ -1,9 +1,9 @@
 #pragma once
 #include "bryla.hh"
 /*!
- * \brief Kalasa opisujaca prostopadloscian
+ * \brief Kalasa opisujaca gore
  *
- *nieniejsza klasa zawiera metody oraz paremetry potrzebne do opisu prostopadloscianu
+ *nieniejsza klasa zawiera metody oraz paremetry potrzebne do opisu gory
  */
 class  Gora: public bryla
 {
@@ -43,12 +43,12 @@ bool Zapis()
 };
 
 /*!
- * Konstruktor parametryczny budujacy prostopadloscian przez obliczenie wierzcholkow na podstawie
+ * Konstruktor parametryczny budujacy gore przez obliczenie wierzcholkow na podstawie
  * podanych danych punbktu pierwszego oraz długiosci i szerokosci
- * \param[in] pkt0 - wektor poczatkowy okreslajacy lewy dolny rog prostopadloscianu
- * \param[in] wysokosc - parametr przyjmujacy wysokosci prostopadloscianu
- * \param[in] szerokosc - parametr przyjmujacy szerokosc prostopadloscianu
- \param[in] dlugosc - parametr przyjmujacy dlugosc  prostopadloscianu
+ * \param[in] pkt0 - wektor poczatkowy okreslajacy lewy dolny rog gory
+ * \param[in] wysokosc - parametr przyjmujacy wysokosci gory
+ * \param[in] szerokosc - parametr przyjmujacy szerokosc gory
+ \param[in] dlugosc - parametr przyjmujacy dlugosc  gory
  */
   Gora:: Gora(  Vector<3> pkt0, double wysokosc, double szerokosc, double dlugosc, std::string nazwa)
  {

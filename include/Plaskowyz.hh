@@ -1,9 +1,9 @@
 #pragma once
 #include "bryla.hh"
 /*!
- * \brief Kalasa opisujaca prostopadloscian
+ * \brief Kalasa opisujaca plaskowyz
  *
- *nieniejsza klasa zawiera metody oraz paremetry potrzebne do opisu prostopadloscianu
+ *nieniejsza klasa zawiera metody oraz paremetry potrzebne do opisu plaskowyz
  */
 class  Plaskowyz: public bryla
 {
@@ -43,12 +43,12 @@ bool Zapis()
 };
 
 /*!
- * Konstruktor parametryczny budujacy prostopadloscian przez obliczenie wierzcholkow na podstawie
+ * Konstruktor parametryczny budujacy plaskowyz przez obliczenie wierzcholkow na podstawie
  * podanych danych punbktu pierwszego oraz długiosci i szerokosci
- * \param[in] pkt0 - wektor poczatkowy okreslajacy lewy dolny rog prostopadloscianu
- * \param[in] wysokosc - parametr przyjmujacy wysokosci prostopadloscianu
- * \param[in] szerokosc - parametr przyjmujacy szerokosc prostopadloscianu
- \param[in] dlugosc - parametr przyjmujacy dlugosc  prostopadloscianu
+ * \param[in] pkt0 - wektor poczatkowy okreslajacy lewy dolny rog plaskowyz
+ * \param[in] wysokosc - parametr przyjmujacy wysokosci plaskowyz
+ * \param[in] szerokosc - parametr przyjmujacy szerokosc plaskowyz
+ \param[in] dlugosc - parametr przyjmujacy dlugosc  plaskowyz
  */
   Plaskowyz:: Plaskowyz(  Vector<3> pkt0, double wysokosc, double szerokosc, double dlugosc, std::string nazwa)
  {

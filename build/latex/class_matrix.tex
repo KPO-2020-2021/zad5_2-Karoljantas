@@ -1,0 +1,143 @@
+\hypertarget{class_matrix}{}\doxysection{Matrix$<$ S\+I\+ZE $>$ Class Template Reference}
+\label{class_matrix}\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_matrix_a6ad13ada55f1e7c5b3a6aa8dc831209e}{Matrix}} ()
+\item 
+\mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_matrix_acd0a31a8980b50dd58c1e9dab818eb55}{operator$\ast$}} (\mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ tmp)
+\item 
+\mbox{\Hypertarget{class_matrix_a1c4af47268e1dc3f11d7dffa95a85da5}\label{class_matrix_a1c4af47268e1dc3f11d7dffa95a85da5}} 
+float {\bfseries Wyznacznik} ()
+\item 
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_matrix_a924b76af78e5217f5fbc8b10f7879f91}{operator+}} (\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$ tmp)
+\item 
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_matrix_acbe3b78799335bc63cf6268b68d6b19b}{operator$\ast$}} (\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$ tmp)
+\item 
+\mbox{\Hypertarget{class_matrix_a21065e1c3adfc84f3545a43298b0fbc8}\label{class_matrix_a21065e1c3adfc84f3545a43298b0fbc8}} 
+void {\bfseries count\+\_\+\+Matrix} (double angle)
+\item 
+double \& \mbox{\hyperlink{class_matrix_a4002e995b530bfcc464523dd39926005}{operator()}} (unsigned int row, unsigned int column)
+\item 
+const double \& \mbox{\hyperlink{class_matrix_a76d4f095f8ee04310044df89a562901f}{operator()}} (unsigned int row, unsigned int column) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_matrix_a6ad13ada55f1e7c5b3a6aa8dc831209e}\label{class_matrix_a6ad13ada55f1e7c5b3a6aa8dc831209e}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$\+::\mbox{\hyperlink{class_matrix}{Matrix}}}
+
+Konstruktor klasy Matrix$<$\+S\+I\+Z\+E$>$. $\vert$ $\vert$ $\vert$ 
+\begin{DoxyRetVals}{Return values}
+{\em \mbox{\hyperlink{class_matrix}{Matrix}}} & wypelnione wartoscia 0. $\vert$ \\
+\hline
+\end{DoxyRetVals}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_matrix_a4002e995b530bfcc464523dd39926005}\label{class_matrix_a4002e995b530bfcc464523dd39926005}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+double \& \mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$\+::operator() (\begin{DoxyParamCaption}\item[{unsigned int}]{row,  }\item[{unsigned int}]{column }\end{DoxyParamCaption})}
+
+Funktor Matrixy $\vert$ Argumenty\+: $\vert$ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em row} & -\/ numer wiersza. $\vert$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em column} & -\/ numer kolumny. $\vert$ $\vert$ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Wartosc} & Matrixy w danym miejscu tablicy. $\vert$ \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_matrix_a76d4f095f8ee04310044df89a562901f}\label{class_matrix_a76d4f095f8ee04310044df89a562901f}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+const double \& \mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$\+::operator() (\begin{DoxyParamCaption}\item[{unsigned int}]{row,  }\item[{unsigned int}]{column }\end{DoxyParamCaption}) const}
+
+\begin{DoxyVerb}Funktor Matrixy                                                        |
+\end{DoxyVerb}
+ Argumenty\+: $\vert$ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em row} & -\/ numer wiersza $\vert$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em column} & -\/ numer kolumny. $\vert$ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Wartosc} & Matrixy w danym miejscu tablicy jako stala. $\vert$ \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_matrix_acbe3b78799335bc63cf6268b68d6b19b}\label{class_matrix_acbe3b78799335bc63cf6268b68d6b19b}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$}]{tmp }\end{DoxyParamCaption})}
+
+operator wymnarzanaia macierzy $\vert$ Argumenty\+: $\vert$ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em this} & -\/ parametr pierwszy. $\vert$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em tmp} & -\/ pramatr drugi. $\vert$ $\vert$ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em wynik} & iloczyn macierzy $\vert$ \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_matrix_acd0a31a8980b50dd58c1e9dab818eb55}\label{class_matrix_acd0a31a8980b50dd58c1e9dab818eb55}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$}]{tmp }\end{DoxyParamCaption})}
+
+Realizuje mnozenie Matrixy przez wektor. $\vert$ Argumenty\+: $\vert$ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em this} & -\/ \mbox{\hyperlink{class_matrix}{Matrix}}, czyli pierwszy skladnik mnozenia, $\vert$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em v} & -\/ wektor, czyli drugi skladnik mnozenia. $\vert$ $\vert$ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Iloczyn} & dwoch skladnikow przekazanych jako wektor. $\vert$ \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_matrix_a924b76af78e5217f5fbc8b10f7879f91}\label{class_matrix_a924b76af78e5217f5fbc8b10f7879f91}} 
+\index{Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!Matrix$<$ SIZE $>$@{Matrix$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ S\+I\+ZE $>$}]{tmp }\end{DoxyParamCaption})}
+
+Przeciążenie dodawania \mbox{\hyperlink{class_matrix}{Matrix}} $\vert$ Argumenty\+: $\vert$ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em this} & -\/ \mbox{\hyperlink{class_matrix}{Matrix}}, czyli pierwszy skladnik dodawania, $\vert$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em v} & -\/ wektor, czyli drugi skladnik dodawania. $\vert$ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em iloczyn} & dwóch podanych Matrixy $\vert$ \\
+\hline
+\end{DoxyRetVals}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/karol/repozytoria/zad5\+\_\+2-\/\+Karoljantas/include/matrix.\+hh\end{DoxyCompactItemize}

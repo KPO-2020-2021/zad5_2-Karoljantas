@@ -1,0 +1,203 @@
+\hypertarget{class_vector}{}\doxysection{Vector$<$ S\+I\+ZE $>$ Class Template Reference}
+\label{class_vector}\index{Vector$<$ SIZE $>$@{Vector$<$ SIZE $>$}}
+
+
+Kalasa opisujaca vector.  
+
+
+
+
+{\ttfamily \#include $<$vector.\+hh$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vector_a518e3f753998a51d74c3079644367253}{Vector}} ()
+\item 
+\mbox{\hyperlink{class_vector_a43d0cfaf5a6d5afd41146840f57169bd}{Vector}} (double\mbox{[}S\+I\+ZE\mbox{]})
+\item 
+\mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_vector_ad074879898d8383756e81390a7ac399a}{operator+}} (const \mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ \&v)
+\item 
+\mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_vector_a10dba7e63da145c3de2e22ac737bd288}{operator-\/}} (const \mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ \&v)
+\item 
+\mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_vector_abea8cdbbb35276411619f66a562484e2}{operator$\ast$}} (const double \&tmp)
+\item 
+\mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_vector_a7dd8a36f13542601a1362c84f5aa4bbb}{operator/}} (const double \&tmp)
+\item 
+const double \& \mbox{\hyperlink{class_vector_aa29bc8b7d6a578cbb0a4e324912ee8fd}{operator\mbox{[}$\,$\mbox{]}}} (int index) const
+\item 
+double \& \mbox{\hyperlink{class_vector_a7841ed729f556fc8e868a80d8f503e18}{operator\mbox{[}$\,$\mbox{]}}} (int index)
+\item 
+\mbox{\Hypertarget{class_vector_aea066eb8df2ee27c1b415565488335e0}\label{class_vector_aea066eb8df2ee27c1b415565488335e0}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ arg) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$int S\+I\+ZE$>$\newline
+class Vector$<$ S\+I\+Z\+E $>$}
+
+Kalasa opisujaca vector. 
+
+nieniejsza klasa zawiera metody oraz paremetry potrzebne do opisu vectora 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_vector_a518e3f753998a51d74c3079644367253}\label{class_vector_a518e3f753998a51d74c3079644367253}} 
+\index{Vector$<$ SIZE $>$@{Vector$<$ SIZE $>$}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector$<$ SIZE $>$@{Vector$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$\+::\mbox{\hyperlink{class_vector}{Vector}}}
+
+Konstruktor klasy \mbox{\hyperlink{class_vector}{Vector}} $\vert$ Argumenty\+: $\vert$ \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{1}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }\\\cline{1-1}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ }\\\cline{1-1}
+\endhead
+\\\cline{1-1}
+\end{longtabu}
+
+\begin{DoxyRetVals}{Return values}
+{\em Tablice} & wypelniona wartoscia 0 $\vert$ \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_vector_a43d0cfaf5a6d5afd41146840f57169bd}\label{class_vector_a43d0cfaf5a6d5afd41146840f57169bd}} 
+\index{Vector$<$ SIZE $>$@{Vector$<$ SIZE $>$}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector$<$ SIZE $>$@{Vector$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$\+::\mbox{\hyperlink{class_vector}{Vector}} (\begin{DoxyParamCaption}\item[{double}]{tmp\mbox{[}\+S\+I\+Z\+E\mbox{]} }\end{DoxyParamCaption})}
+
+Konstruktor klasy \mbox{\hyperlink{class_vector}{Vector}} $\vert$ Argumenty\+: $\vert$ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em tmp} & -\/ Jednowymiarowa tablica typu double. $\vert$ $\vert$ $\vert$ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Tablice} & wypelniona wartosciami podanymi w argumencie. $\vert$ \\
+\hline
+\end{DoxyRetVals}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_vector_abea8cdbbb35276411619f66a562484e2}\label{class_vector_abea8cdbbb35276411619f66a562484e2}} 
+\index{Vector$<$ SIZE $>$@{Vector$<$ SIZE $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vector$<$ SIZE $>$@{Vector$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const double \&}]{tmp }\end{DoxyParamCaption})}
+
+Realizuje mnozenie wektora przez liczbe zmiennoprzecinkowa. . $\vert$ Argumenty\+: $\vert$ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em this} & -\/ pierwszy skladnik mnozenia (wektor), $\vert$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em v} & -\/ drugi skladnik mnozenia (liczba typu double). $\vert$ $\vert$ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Iloczyn} & dwoch skladnikow przekazanych jako wskaznik $\vert$ na parametr. $\vert$ \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_vector_ad074879898d8383756e81390a7ac399a}\label{class_vector_ad074879898d8383756e81390a7ac399a}} 
+\index{Vector$<$ SIZE $>$@{Vector$<$ SIZE $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!Vector$<$ SIZE $>$@{Vector$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ \&}]{v }\end{DoxyParamCaption})}
+
+Realizuje dodawanie dwoch wektorow. $\vert$ Argumenty\+: $\vert$ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em this} & -\/ pierwszy skladnik dodawania $\vert$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em v} & -\/ drugi skladnik dodawania $\vert$ $\vert$ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Sume} & dwoch skladnikow przekazanych jako wskaznik $\vert$ na parametr. $\vert$ \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_vector_a10dba7e63da145c3de2e22ac737bd288}\label{class_vector_a10dba7e63da145c3de2e22ac737bd288}} 
+\index{Vector$<$ SIZE $>$@{Vector$<$ SIZE $>$}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector$<$ SIZE $>$@{Vector$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ \&}]{v }\end{DoxyParamCaption})}
+
+$\vert$\+Realizuje odejmowanie dwoch wektorow. . $\vert$ Argumenty\+: $\vert$ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em this} & -\/ pierwszy skladnik odejmowania, $\vert$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em v} & -\/ drugi skladnik odejmowania. $\vert$ $\vert$ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Roznice} & dwoch skladnikow przekazanych jako wskaznik $\vert$ na parametr. $\vert$ \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_vector_a7dd8a36f13542601a1362c84f5aa4bbb}\label{class_vector_a7dd8a36f13542601a1362c84f5aa4bbb}} 
+\index{Vector$<$ SIZE $>$@{Vector$<$ SIZE $>$}!operator/@{operator/}}
+\index{operator/@{operator/}!Vector$<$ SIZE $>$@{Vector$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+\mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$ \mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$\+::operator/ (\begin{DoxyParamCaption}\item[{const double \&}]{tmp }\end{DoxyParamCaption})}
+
+Realizuje dzielenie dwoch wektorow. . $\vert$ Argumenty\+: $\vert$ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em this} & -\/ licznik dzielenia, $\vert$ \\
+\hline
+\mbox{\texttt{ in}}  & {\em v} & -\/ mianownik dzielenia. $\vert$ $\vert$ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Iloraz} & dwoch skladnikow przekazanych jako wskaznik $\vert$ na parametr. $\vert$ \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_vector_a7841ed729f556fc8e868a80d8f503e18}\label{class_vector_a7841ed729f556fc8e868a80d8f503e18}} 
+\index{Vector$<$ SIZE $>$@{Vector$<$ SIZE $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector$<$ SIZE $>$@{Vector$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+double \& \mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+Funktor wektora. $\vert$ Argumenty\+: $\vert$ $\vert$ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em index} & -\/ index wektora $\vert$ $\vert$ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Wartosc} & wektora w danym miejscu tablicy. . $\vert$ \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_vector_aa29bc8b7d6a578cbb0a4e324912ee8fd}\label{class_vector_aa29bc8b7d6a578cbb0a4e324912ee8fd}} 
+\index{Vector$<$ SIZE $>$@{Vector$<$ SIZE $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector$<$ SIZE $>$@{Vector$<$ SIZE $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int S\+I\+ZE$>$ \\
+const double \& \mbox{\hyperlink{class_vector}{Vector}}$<$ S\+I\+ZE $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+Funktor wektora. $\vert$ Argumenty\+: $\vert$ $\vert$ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em index} & -\/ index wektora $\vert$ $\vert$ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Wartosc} & wektora w danym miejscu tablicy jako stala. $\vert$ \\
+\hline
+\end{DoxyRetVals}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/karol/repozytoria/zad5\+\_\+2-\/\+Karoljantas/include/vector.\+hh\end{DoxyCompactItemize}

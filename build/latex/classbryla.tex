@@ -1,0 +1,162 @@
+\hypertarget{classbryla}{}\doxysection{bryla Class Reference}
+\label{classbryla}\index{bryla@{bryla}}
+
+
+Kalasa opisujaca bryle.  
+
+
+
+
+{\ttfamily \#include $<$bryla.\+hh$>$}
+
+Inheritance diagram for bryla\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classbryla}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbryla_acb05c6753f405eebda9e91f6a8b3f48a}\label{classbryla_acb05c6753f405eebda9e91f6a8b3f48a}} 
+\mbox{\hyperlink{class_vector}{Vector}}$<$ 3 $>$ {\bfseries get\+\_\+srodek} ()
+\item 
+const \mbox{\hyperlink{class_vector}{Vector}}$<$ 3 $>$ \& \mbox{\hyperlink{classbryla_af54ca486fb274145470ed1d8cc320308}{operator\mbox{[}$\,$\mbox{]}}} (int index) const
+\item 
+\mbox{\hyperlink{class_vector}{Vector}}$<$ 3 $>$ \& \mbox{\hyperlink{classbryla_ab27448dd41f1c4a3f38b8cd18bf788de}{operator\mbox{[}$\,$\mbox{]}}} (int index)
+\item 
+\mbox{\hyperlink{classbryla}{bryla}} \mbox{\hyperlink{classbryla_a244b6610e50eaf87293e73ac3a509282}{operator+}} (\mbox{\hyperlink{class_vector}{Vector}}$<$ 3 $>$ move)
+\item 
+void \mbox{\hyperlink{classbryla_a0bf9ce68e5fdc509a63d8fe6920cddc2}{move\+\_\+r}} (\mbox{\hyperlink{class_vector}{Vector}}$<$ 3 $>$ move)
+\item 
+void \mbox{\hyperlink{classbryla_ac2da49556c9fbe5364d1e634cb99155d}{rot}} (\mbox{\hyperlink{class_matrix}{Matrix}}$<$ 3 $>$ mac)
+\item 
+\mbox{\Hypertarget{classbryla_ac2cabeed7202ad480d691e6615c28707}\label{classbryla_ac2cabeed7202ad480d691e6615c28707}} 
+std\+::string {\bfseries get\+\_\+nazwa} ()
+\item 
+\mbox{\Hypertarget{classbryla_a45450f3dde6d9dc4360a70318cf0d854}\label{classbryla_a45450f3dde6d9dc4360a70318cf0d854}} 
+bool {\bfseries Zapis} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbryla_afe6cc5a44a854aa4f1b649cc72225851}\label{classbryla_afe6cc5a44a854aa4f1b649cc72225851}} 
+int {\bfseries S\+I\+ZE}
+\item 
+\mbox{\Hypertarget{classbryla_a42135981a13735fa1d68b1e872485eb1}\label{classbryla_a42135981a13735fa1d68b1e872485eb1}} 
+\mbox{\hyperlink{class_vector}{Vector}}$<$ 3 $>$ {\bfseries srodek}
+\item 
+\mbox{\Hypertarget{classbryla_a77a3bbc2c2c92a63f28b329cb8e5627f}\label{classbryla_a77a3bbc2c2c92a63f28b329cb8e5627f}} 
+std\+::vector$<$ \mbox{\hyperlink{class_vector}{Vector}}$<$ 3 $>$ $>$ {\bfseries point}
+\item 
+\mbox{\Hypertarget{classbryla_a52d08ede2b962a87acc066a0e5c88c23}\label{classbryla_a52d08ede2b962a87acc066a0e5c88c23}} 
+std\+::string {\bfseries nazwa}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Kalasa opisujaca bryle. 
+
+nieniejsza klasa zawiera metody oraz paremetry potrzebne do opisu bryly 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbryla_a0bf9ce68e5fdc509a63d8fe6920cddc2}\label{classbryla_a0bf9ce68e5fdc509a63d8fe6920cddc2}} 
+\index{bryla@{bryla}!move\_r@{move\_r}}
+\index{move\_r@{move\_r}!bryla@{bryla}}
+\doxysubsubsection{\texorpdfstring{move\_r()}{move\_r()}}
+{\footnotesize\ttfamily void bryla\+::move\+\_\+r (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ 3 $>$}]{move }\end{DoxyParamCaption})}
+
+funkcja przesowajaca Bryla o dany wektor ~\newline
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em move-\/} & wektor translacjia. ~\newline
+ \\
+\hline
+ & {\em this} & -\/ Bryla ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Bryla} & po przesunueciu ~\newline
+ \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classbryla_a244b6610e50eaf87293e73ac3a509282}\label{classbryla_a244b6610e50eaf87293e73ac3a509282}} 
+\index{bryla@{bryla}!operator+@{operator+}}
+\index{operator+@{operator+}!bryla@{bryla}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbryla}{bryla}} bryla\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vector}{Vector}}$<$ 3 $>$}]{move }\end{DoxyParamCaption})}
+
+Realizuje dodawanie Wektora do Bryly. ~\newline
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em move-\/} & drugi skladnik dodawania. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Sume} & dwoch skladnikow wierzcholkow Bryly i wektora ~\newline
+ \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classbryla_ab27448dd41f1c4a3f38b8cd18bf788de}\label{classbryla_ab27448dd41f1c4a3f38b8cd18bf788de}} 
+\index{bryla@{bryla}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!bryla@{bryla}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vector}{Vector}}$<$ 3 $>$ \& bryla\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+Funktor Bryly. ~\newline
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em index} & -\/ index wektora. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Wartosc} & Bryly w danym miejscu tablicy. ~\newline
+ \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classbryla_af54ca486fb274145470ed1d8cc320308}\label{classbryla_af54ca486fb274145470ed1d8cc320308}} 
+\index{bryla@{bryla}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!bryla@{bryla}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vector}{Vector}}$<$ 3 $>$ \& bryla\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+Funktor bryla. ~\newline
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em index} & -\/ index wektora. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Wartosc} & Bryly w danym miejscu tablicy. ~\newline
+ \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{classbryla_ac2da49556c9fbe5364d1e634cb99155d}\label{classbryla_ac2da49556c9fbe5364d1e634cb99155d}} 
+\index{bryla@{bryla}!rot@{rot}}
+\index{rot@{rot}!bryla@{bryla}}
+\doxysubsubsection{\texorpdfstring{rot()}{rot()}}
+{\footnotesize\ttfamily void bryla\+::rot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ 3 $>$}]{mac }\end{DoxyParamCaption})}
+
+rotacja bryly $\vert$ Argumenty\+: $\vert$ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em mac} & -\/ macie obr $\vert$ $\vert$ $\vert$ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bryla} & po obr $\vert$ \\
+\hline
+\end{DoxyRetVals}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/karol/repozytoria/zad5\+\_\+2-\/\+Karoljantas/include/bryla.\+hh\end{DoxyCompactItemize}
