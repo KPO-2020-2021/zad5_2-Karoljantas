@@ -56,12 +56,16 @@ public:
     Lacze.UstawZakresZ(-400, 400);
     dno = new Powierzchnia(800, 800, -20, "../datasets/dno.dat");
   }
-
+/*!
+ * Funkcja opisujaca zapis                                                          |
+ *  Argumenty:                                                                |
+ *                                                |
+ */
   void Zapis() {
-      for (std::list<std::shared_ptr<bryla>>::const_iterator a = lista_przeszkod.begin(); a != lista_przeszkod.end(); a++)
+      for (std::list<std::shared_ptr<bryla>>::const_iterator k = lista_przeszkod.begin(); k != lista_przeszkod.end(); k++)
   {
 
-    (*a)->Zapis();
+    (*k)->Zapis();
   }
     for (int i = 0; i < 2; i++)
       nowy[i]->Zapis();
@@ -84,7 +88,7 @@ public:
     double x, a;
     double kat = 0;
     int nr;
-    std::cout << "1 normlany lot 2 okregi 3 dodaj przeszkode " << std::endl;
+    std::cout << "1 normlany lot 2 okregi 3 dodaj przeszkode 4 usun " << std::endl;
     std::cin >> opc;
     switch (opc) {
     case 1: {
@@ -221,6 +225,20 @@ if(ob==0)
 }
 nr_ob++;
 }
+
+    break;
+    case 4:
+    {
+      std::cout << "podaj nr obiektu: " << std::endl;
+      std::cin >> nr;
+std::list<std::shared_ptr<bryla>>::const_iterator k = lista_przeszkod.begin();
+for(int i=0; i<nr; i++)
+{
+  k++;
+}
+Lacze.UsunNazwePliku( (*k)->get_nazwa());
+lista_przeszkod.erase(k);
+    }
     break;
     default:
       break;
